@@ -26,7 +26,7 @@ document.addEventListener('keydown', jump );
 
 
 
-document.getElementById('botaoEspaco').addEventListener('click', function() {
+document.addEventListener('click', function() {
     var evento = new KeyboardEvent('keydown', {
       key: ' ',
       keyCode: 32,
