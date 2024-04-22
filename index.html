@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botão de Espaço</title>
-
+    
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
 
@@ -18,20 +17,9 @@
         <img src="images/pipe.png" class="pipe">
 
     </div>
-    <!-- Botão -->
+   
 <button id="botaoEspaco">Pressione Espaço</button>
 
-<script>
-document.getElementById('botaoEspaco').addEventListener('click', function() {
-  // Simula o pressionamento da tecla de espaço
-  var evento = new KeyboardEvent('keydown', {
-    key: ' ',
-    keyCode: 32,
-    which: 32
-  });
-  document.dispatchEvent(evento);
-});
-</script>
 
 </body>
 </html>
