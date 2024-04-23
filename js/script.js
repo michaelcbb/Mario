@@ -15,8 +15,11 @@ const jump =() => {
 const loop = setInterval(() => {
 
     const pipePosition = pipe.offsetLeft;
+    const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
+
+    console.log(marioPosition);
     
-    if(pipePosition <= 120) {
+    if(pipePosition <= 120 && marioPosition < 80) {
 
         pipe.style.animation = 'none';
         pipe.style.left = `${pipePosition}px`;
@@ -32,11 +35,11 @@ document.addEventListener('keydown', jump );
 
 
 
-document.addEventListener('click', function() {
+/*document.addEventListener('click', function() {
     var evento = new KeyboardEvent('keydown', {
       key: ' ',
       keyCode: 32,
       which: 32
     });
     document.dispatchEvent(evento);
-  });
+  });*/
