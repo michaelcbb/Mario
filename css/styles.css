@@ -80,3 +80,12 @@
         right: 100%;
     }
 }
+
+  /* Estilize o botão como desejar */
+  #new-game-button {
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
