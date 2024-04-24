@@ -43,11 +43,13 @@ const loop = setInterval(() => {
 document.addEventListener('keydown', jump );
 
 
-document.addEventListener('click', function() {
+const gameBoard = document.querySelector('.game-board');
+
+gameBoard.addEventListener('click', function() {
     var evento = new KeyboardEvent('keydown', {
       key: ' ',
       keyCode: 32,
       which: 32
     });
     document.dispatchEvent(evento);
-  });
+});
