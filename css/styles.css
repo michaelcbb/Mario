@@ -81,11 +81,15 @@
     }
 }
 
-  /* Estilize o botão como desejar */
   #new-game-button {
+    border-radius: 16px;
+    width: 10%;
+    bottom: 0;
     background-color: #0074D9;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    margin-top: 2rem;
 }
+
