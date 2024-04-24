@@ -13,6 +13,7 @@ const jump =() => {
 
 }
 
+
 const loop = setInterval(() => {
 
     console.log('loop')
@@ -39,16 +40,14 @@ const loop = setInterval(() => {
     }
 
 }, 10);
-
 document.addEventListener('keydown', jump );
 
-/*document.addEventListener('click', function() {
+
+document.addEventListener('click', function() {
     var evento = new KeyboardEvent('keydown', {
       key: ' ',
       keyCode: 32,
       which: 32
     });
     document.dispatchEvent(evento);
-  }); */
-
- 
+  });
