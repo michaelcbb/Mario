@@ -42,11 +42,6 @@ const loop = setInterval(() => {
 
 document.addEventListener('keydown', jump );
 
-
-
-
-
-
 document.addEventListener('click', function() {
     var evento = new KeyboardEvent('keydown', {
       key: ' ',
