@@ -53,3 +53,9 @@ gameBoard.addEventListener('click', function() {
     });
     document.dispatchEvent(evento);
 });
+
+const reloadButton = document.querySelector('#reload-button');
+
+reloadButton.addEventListener('click', function() {
+    location.reload();
+});
