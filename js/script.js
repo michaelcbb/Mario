@@ -61,3 +61,13 @@ reloadButton.addEventListener('click', function() {
 });
 
 let pontuacao = 0;
+
+function atualizarPontuacao(pontos) {
+    pontuacao += pontos;
+    document.getElementById("pontuacao").textContent = pontuacao;
+}
+
+function jogadorMarcaGol() {
+    // Adicione 10 pontos por gol
+    atualizarPontuacao(10);
+}
