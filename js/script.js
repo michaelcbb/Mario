@@ -59,3 +59,5 @@ const reloadButton = document.querySelector('#reload-button');
 reloadButton.addEventListener('click', function() {
     location.reload();
 });
+
+let pontuacao = 0;
